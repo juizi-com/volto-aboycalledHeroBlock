@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-hero-block {
+  background-size: cover;
+  background-position: center;
+  padding: 16rem 0 4rem;
+  color: white;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.custom-hero-block.full-width {
+  width: 100% !important;
+}
+.view-editview .custom-hero-block.full-width {
+  width: 100vw !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8));
+  z-index: 0;
+}
+
+.custom-hero-inner {
+  max-width: var(--default-container-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.custom-hero-content h1 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+.custom-hero-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.custom-hero-inner.align-left .custom-hero-content {
+  text-align: left;
+}
+
+.custom-hero-inner.align-center .custom-hero-content {
+  text-align: center;
+}
+
+.custom-hero-inner.align-right .custom-hero-content {
+  text-align: right;
+}
+
+.custom-hero-inner.align-left .custom-hero-buttons {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.custom-hero-inner.align-center .custom-hero-buttons {
+  justify-content: center;
+  text-align: center;
+}
+
+.custom-hero-inner.align-right .custom-hero-buttons {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.custom-hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.align-center .custom-hero-buttons {
+  justify-content: center;
+}
+
+.align-right .custom-hero-buttons {
+  justify-content: flex-end;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid #fff;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.hero-button:hover {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #fff;
+  color: #000 !important;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.custom-hero-buttons.small-buttons {
+  gap: 0.7rem;
+}
+.custom-hero-buttons.small-buttons .hero-button {
+  padding: 0.4rem 1rem;
+  font-size: 80%;
+}
+
+/*If here is placed before page title, hide title*/
+.custom-hero-block + .documentFirstHeading,
+.custom-hero-block ~ .documentFirstHeading {
+  display: none;
+}
+
+.hero-video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-image-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+@container (max-width: 980px) {
+  .custom-hero-inner {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
