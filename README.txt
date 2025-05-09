@@ -1,3 +1,5 @@
+These files get added to the customizations/components/Blocks folder
+
 To register CustomHero block, add to src/index.js
 
 import heroSVG from '@plone/volto/icons/hero.svg';
