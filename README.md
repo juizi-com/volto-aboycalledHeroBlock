@@ -1,4 +1,10 @@
 # Juizi | Volto aboycalledHeroBlock
+
+> [!IMPORTANT]
+> **This block has moved.** It is now part of [juizi-blocks](https://github.com/juizi-com/juizi-blocks), Juizi's consolidated block set for Plone 6 and Volto, which is actively maintained (currently in alpha). This repository is no longer updated.
+>
+> In juizi-blocks this block is the **Hero** block. Content built with this older block is converted automatically when a page loads; see [COMPATIBILITY.md](https://github.com/juizi-com/juizi-blocks/blob/main/COMPATIBILITY.md).
+
 A hero block with image and video support, alignment options and can use page's preview image, title and description.
 
 ## Options
